@@ -15,6 +15,25 @@
     width: 55% !important;
   }
 }
+@media screen and (max-width: 400px){
+  h3 {
+    display: inline-block !important;
+    font-size: 25px  !important;
+    margin-left: 6px !important;
+  }
+}
+
+@media screen and (max-width: 350px){
+  h3 {
+    display: inline-block !important;
+    font-size: 24px  !important;
+    margin-left: 6px !important;
+  }
+  span {
+    display: block;
+    font-size: 18px !important;
+  }
+}
 
 .dropdown {
   /* border: 1px solid red; */
@@ -40,9 +59,10 @@ span {
 }
 #services
 {
-    background-color: black;
-    border: 1px solid red;
-    height: 50vh;
+    background-color: rgb(199 192 192 / 23%);;
+    /* border: 1px solid red; */
+    height: auto;
+    padding: 30px 20px;
 }
 .service {
   border: 1px solid #24aeea;
@@ -50,7 +70,7 @@ span {
   border-radius: 50%;
   margin: 20px auto;
   height: 22vh;
-  width: 50%;
+  width: 57%;
   color: #24aeea;
   font-size: 75px;
   text-align: center;
@@ -59,11 +79,11 @@ span {
   background-color: #24aeea;
   transform: 1s;
 }
-.service:hover #document {
+.service:hover .document {
   color: white;
 }
 
-#document {
+.document {
   vertical-align: middle;
 
 }
@@ -79,4 +99,46 @@ span {
 .col
 {
     border: none;
+}
+
+.card
+{
+  border: none;
+background: transparent;
+}
+#service
+{
+  border-bottom: 1px solid rebeccapurple;
+  /* border: 1px solid red;    */
+  width: 23%;
+  margin: 20px auto;
+  margin-bottom: 20px;
+font-weight: bold;
+   text-align: center;
+  font-size: 30px;
+}
+.top
+{
+  /* border: 1px solid red; */
+  background-color: #24aeea;
+color: white;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+justify-content: center;
+border-radius: 50%;
+display: flex;
+position: fixed;
+bottom: 20px;
+right: 50px;
+font-size: 30px;
+opacity: 0;
+transform: all 0.5s;
+
+}
+.top.active
+
+{
+  opacity: 1;
 }
