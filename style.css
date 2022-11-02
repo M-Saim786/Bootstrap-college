@@ -43,7 +43,6 @@
   width: 28%;
 }
 #logo {
-  /* border: 1px solid red; */
   padding: 4px 4px;
   width: 22%;
   margin-top: -35px;
@@ -59,58 +58,46 @@ span {
 }
 #services
 {
-    background-color: rgb(199 192 192 / 23%);;
+    background-color: rgb(199 192 192 / 23%);
     /* border: 1px solid red; */
     height: auto;
     padding: 30px 20px;
 }
 .service {
   border: 1px solid #24aeea;
-  display: block;
+  display: flex;
   border-radius: 50%;
   margin: 20px auto;
   height: 22vh;
   width: 57%;
   color: #24aeea;
   font-size: 75px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .service:hover {
   background-color: #24aeea;
   transform: 1s;
 }
-.service:hover .document {
+.service:hover .document
+{
   color: white;
 }
-
-.document {
-  vertical-align: middle;
-
-}
-.card-body 
-{
-    text-align: center;
-}
-
 .Services
 {
     text-decoration: none;
 }
-.col
-{
-    border: none;
-}
-
 .card
 {
   border: none;
-background: transparent;
+    text-align: center;
+    background: transparent;
 }
 #service
 {
   border-bottom: 1px solid rebeccapurple;
   /* border: 1px solid red;    */
-  width: 23%;
+  width: 80%;
   margin: 20px auto;
   margin-bottom: 20px;
 font-weight: bold;
@@ -119,7 +106,6 @@ font-weight: bold;
 }
 .top
 {
-  /* border: 1px solid red; */
   background-color: #24aeea;
 color: white;
   text-decoration: none;
@@ -135,10 +121,9 @@ right: 50px;
 font-size: 30px;
 opacity: 0;
 transform: all 0.5s;
-
 }
 .top.active
-
 {
   opacity: 1;
+  color: white;
 }
