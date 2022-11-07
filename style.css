@@ -1,12 +1,52 @@
+@media screen and (max-width: 1100px) {
+ 
+  .login
+  {
+    margin: left 20px !important; 
+
+  }
+  .sign-up{
+    /* margin: left 20px !important; */
+    width: 16% !important;
+  }
+ h3
+ {
+  margin-left: -5px !important;
+ }
+  
+.dropdown {
+  /* border: 1px solid red; */
+  padding: 0px 15px;
+}
+}
 @media screen and (max-width: 1000px) {
   #logo {
     width: 40% !important;
     /* border: 1px solid red; */
   }
+  .login
+  {
+    margin: left 20px !important; 
+
+  }
+  .sign-up{
+    margin: left 20px !important;
+    width: 16% !important;
+  }
 }
 @media screen and (max-width: 800px) {
   #logo {
     width: 45% !important;
+  }
+  .login
+  {
+    margin: left 20px !important; 
+    width: 16% !important;
+
+  }
+  .sign-up{
+    margin: left 20px !important;
+    width: 17% !important;
   }
 }
 
@@ -14,12 +54,30 @@
   #logo {
     width: 55% !important;
   }
+  .login
+  {
+    margin: left 20px !important; 
+width: 21% !important;
+  }
+  .sign-up{
+    margin: left 20px !important;
+    width: 28% !important;
+  }
 }
 @media screen and (max-width: 400px){
   h3 {
     display: inline-block !important;
     font-size: 25px  !important;
     margin-left: 6px !important;
+  }
+  .login
+  {
+    margin: left 20px !important; 
+
+  }
+  .sign-up{
+    margin: left 20px !important;
+    width: 33% !important;
   }
 }
 
@@ -33,11 +91,20 @@
     display: block;
     font-size: 18px !important;
   }
+  .login
+  {
+    margin: left 20px !important; 
+width: 33% !important;
+  }
+  .sign-up{
+    margin: left 20px !important;
+    width: 40% !important;
+  }
 }
 
 .dropdown {
   /* border: 1px solid red; */
-  padding: 0px 35px;
+  padding: 0px 15px;
 }
 .logoa {
   width: 28%;
@@ -126,4 +193,70 @@ transform: all 0.5s;
 {
   opacity: 1;
   color: white;
+}
+
+
+.login{
+  /* border: 1px solid red; */
+  margin-right: 20px;
+  width: 11%;
+  font-size: 20px;
+  /* font-weight: bold; */
+  background-color: rgb(255, 255, 255);
+  color: #0d6efd;;
+}
+.sign-up
+{
+  /* border: 1px solid red; */
+  margin-right: 20px;
+  font-size: 20px;
+  width: 16%;
+}
+.sign-up:hover
+{
+  background-color: rgb(255, 255, 255);
+  color: #0d6efd;
+}
+label{
+  font-size: 1rem !important;
+  color: black !important;
+  padding: 10px 15px;
+}
+
+#email
+{
+  border: none !important;
+  border-bottom: 2px solid #24aeea !important;
+  /* padding-left: 20px; */
+  outline: none;
+  margin-left: 1px;
+  width: 40%;
+  color: black;
+  transition: all 0.5s;
+}
+
+#password{
+  border: none !important;
+  border-bottom: 2px solid #24aeea !important;
+  outline: none;
+  margin-left: -6px;
+  width: 40%;
+  transition: all 0.5s;
+
+}
+
+ #email:hover
+{
+  width: 60%;
+}
+#password:hover
+{
+  width: 60%;
+
+}
+#create-account{
+  font-size: 1rem !important;
+  /* border: 1px solid red; */
+  margin: 0px auto;
+
 }

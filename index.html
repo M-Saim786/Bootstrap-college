@@ -31,9 +31,9 @@
               About
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Mr. Principal Message</a></li>
-              <li><a class="dropdown-item" href="#">Vision & Message</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="./Components/About.html">Mr. Principal Message</a></li>
+              <li><a class="dropdown-item" href="./Components/About.html">Vision & Message</a></li>
+              <li><a class="dropdown-item" href="./Components/Addmision.html">Addmissions</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -68,6 +68,96 @@
             </ul>
           </li>
         </ul>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary login" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Login</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login to Get Full Access on All Features</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table>
+          <tr>
+        <label for="email" class="email">Enter Your Email ID </label>
+        <input type="text" required name="email" id="email" class="email"> <br>
+        <td></td>
+            <td></td>
+          </tr>  
+          <tr>
+         <label for="password" class="pass">Enter Your Password </label>
+         <td></td>
+        <input type="password" required name="email" id="password" class="pass">
+        <td></td>
+          </tr>
+          <br>
+          <tr>
+            <td><input type="checkbox" name="" id="save"></td>
+            <td><label for="save">Always Remember Me</label></td>
+
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <div id="create-account">Don't Have Account <a href="">Sign-Up</a></div>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick={login()}>Login</button>
+        
+      </div>
+    </div>
+  </div>
+ </div>
+
+               <!-- LogIN Modal End's Here -->
+
+
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary sign-up" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign-Up to Get Full Access on All Features</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table>
+          <tr>
+        <label for="email" class="email">Enter Your Email ID </label>
+        <input type="text" required name="email" id="email" class="email"> <br>
+        <td></td>
+            <td></td>
+          </tr>  
+          <tr>
+         <label for="password" class="pass">Enter Your Password </label>
+         <td></td>
+        <input type="password" required name="email" id="password" class="pass">
+        <td></td>
+          </tr>
+          <br>
+          <tr>
+            <td><input type="checkbox" name="" id="saved"></td>
+            <td><label for="saved">Always Remember Me</label></td>
+
+          </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </div>
     </div>
   </nav>
