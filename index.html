@@ -72,7 +72,7 @@
         <button class="btn btn-primary login" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Login</button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -82,21 +82,29 @@
       <div class="modal-body">
         <table>
           <tr>
-        <label for="email" class="email">Enter Your Email ID </label>
+        <td>
+        <label for="email" class="lemail">Enter Your Email ID </label>
+
+        </td>
+            <td>
         <input type="text" required name="email" id="email" class="email"> <br>
-        <td></td>
-            <td></td>
+
+            </td>
           </tr>  
           <tr>
-         <label for="password" class="pass">Enter Your Password </label>
-         <td></td>
-        <input type="password" required name="email" id="password" class="pass">
-        <td></td>
+         <td>
+         <label for="password" class="lemail">Enter Your Password </label>
+
+         </td>
+        <td>
+        <input type="password" required name="email" id="password" class="email">
+
+        </td>
           </tr>
           <br>
           <tr>
-            <td><input type="checkbox" name="" id="save"></td>
-            <td><label for="save">Always Remember Me</label></td>
+            <td><input type="checkbox" name="" id="save">
+            <label for="save">Always Remember Me</label></td>
 
           </tr>
         </table>
@@ -127,30 +135,56 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+        <span id="modal-body-text">Fill This Form To Sign-Up</span>
         <table>
           <tr>
-        <label for="email" class="email">Enter Your Email ID </label>
-        <input type="text" required name="email" id="email" class="email"> <br>
-        <td></td>
-            <td></td>
+            <td>
+        <label for="fname" class="lemail">Enter Your First Name</label>
+            </td>
+            <td>
+        <input type="text" required name="fname" id="fname" class="email"> 
+            </td>
+          </tr>
+           <tr>
+            <td>
+        <label for="lname" class="lemail">Enter Your Last Name</label>
+            </td>
+            <td>
+        <input type="text" required name="lname" id="lname" class="email"> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+        <label for="Email" class="lemail">Enter Your Email ID </label>
+
+            </td>
+        <td>
+        <input type="text" required name="email" id="Email" class="email"> 
+      </td>
           </tr>  
           <tr>
-         <label for="password" class="pass">Enter Your Password </label>
-         <td></td>
-        <input type="password" required name="email" id="password" class="pass">
-        <td></td>
+         <td>
+         <label for="Password" class="lemail">Enter Your Password </label>
+
+         </td>
+        <td>
+        <input type="password" required name="email" id="Password" class="email">
+        </td>
           </tr>
           <br>
           <tr>
-            <td><input type="checkbox" name="" id="saved"></td>
-            <td><label for="saved">Always Remember Me</label></td>
+            <td><input type="checkbox" name="" id="saved">
+          <label for="saved">Always Remember Me</label>
+          </td>
 
           </tr>
         </table>
       </div>
       <div class="modal-footer">
+        <div id="create-account">Already Have Account <a href="#">Login</a></div>
+
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary">Sign-Up</button>
       </div>
     </div>
   </div>

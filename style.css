@@ -223,18 +223,17 @@ label{
   padding: 10px 15px;
 }
 
-#email
+/* #email
 {
   border: none !important;
   border-bottom: 2px solid #24aeea !important;
-  /* padding-left: 20px; */
   outline: none;
   margin-left: 1px;
   width: 40%;
   color: black;
   transition: all 0.5s;
-}
-
+} */
+/* 
 #password{
   border: none !important;
   border-bottom: 2px solid #24aeea !important;
@@ -243,20 +242,43 @@ label{
   width: 40%;
   transition: all 0.5s;
 
-}
+} */
 
- #email:hover
-{
-  width: 60%;
-}
-#password:hover
-{
-  width: 60%;
-
-}
 #create-account{
   font-size: 1rem !important;
   /* border: 1px solid red; */
   margin: 0px auto;
 
+}
+
+.lemail
+{
+  /* border:  1px solid red; */
+width: 92%;
+
+}
+.email{
+  /* border:  1px solid red; */
+width: 85%;
+outline: none;
+border: none !important;
+border-bottom: 2px solid #6c757d !important;
+background: transparent;
+padding: 10px 10px;
+transition: all 0.5s;
+}
+.email:hover{
+  width: 130%;
+}
+.modal-body
+{
+  background-color: #2ffaff1a;
+}
+
+#modal-body-text
+{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
 }
