@@ -154,7 +154,7 @@ span {
   font-size: 30px;
 }
 .top {
-  background-color: #24aeea;
+  background-color: #eabf24;
   color: white;
   text-decoration: none;
   width: 60px;
@@ -169,6 +169,7 @@ span {
   font-size: 30px;
   opacity: 0;
   transform: all 0.5s;
+  z-index: 1;
 }
 .top.active {
   opacity: 1;
@@ -238,16 +239,17 @@ label {
 .footer {
   /* border: 1px solid red; */
   background-color: #24aeea;
-  height: 40vh;
+  height: auto;
   position: sticky;
   /* bottom: 0; */
 }
 
 #iframe {
+  border: 1px solid red;
   float: right;
   padding: 20px 20px;
   height: 40vh;
-  width: 40%;
+  width: 100%;
 }
 
 .contact-us {
@@ -269,9 +271,9 @@ label {
   display: inline-block;
   list-style: none;
   padding: 20px 20px;
-  width: 20%;
+  width: auto;
   /* border: 1px solid red; */
-  margin: 7px 75px;
+  margin: 7px 50px;
 }
 
 .links li
@@ -300,12 +302,25 @@ transition: all 0.4s;
 }
 
 .fbise-links {
-  display: inline-block;
+  display: block;
   list-style: none;
   padding: 20px 20px;
-  width: 15%;
+  width: 70%;
   /* border: 1px solid red; */
   margin: 7px  75px;
+}
+.div-div-fbise
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-fbise
+{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fbise-links li {
   padding: 5px 6px;
@@ -324,4 +339,12 @@ transition: all 0.4s;
 .fgdc-btn {
   width: 100%;
   color: white;
+}
+
+
+.f-div
+{
+  /* border: 1px solid red; */
+  /* width: 33%; */
+  /* display: flex; */
 }
