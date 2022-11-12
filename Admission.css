@@ -6,15 +6,45 @@
     align-items: center;
    }
 }
-
+@media screen and (max-width:600px) {
+    .header{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    .header{
+        font-size: 15px;
+    }
+}@media screen and (max-width:800px) {
+    .header{
+        font-size: 15px;
+    }
+}@media screen and (max-width:900px) {
+    .header{
+        font-size: 15px;
+    }
+}
+.header {
+    width: 40%;
+   height: auto;
+    /* border: 2px solid red; */
+    margin-left: 370px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 23px;
+    font-size: 20px;
+    border-top: 13px solid gray;
+    display: inline-block;
+}
 
 body {
     background-color: rgb(240, 238, 238);
 }
 
 .name {
-    width: 527px;
-    height: 110px;
+    width: 40%;
+   height: auto;
     /* border: 2px solid red; */
     margin-left: 370px;
     margin-top: 25px;
@@ -27,7 +57,7 @@ body {
 #name {
     width: 70%;
     margin: 10px 14px;
-    height: 34px;
+   height: auto;
     border: none;
     background: transparent;
     border-bottom: 1px solid rgb(95, 89, 89);
@@ -46,14 +76,14 @@ body {
     /* padding: px;
     width: 70%;
     margin: 18px 0px;
-    height: 34px;
+   height: auto;34px;
     border: none;
     background: transparent;
     border-bottom: 1px solid rgb(95, 89, 89); */
     padding: px;
     width: 70%;
     margin: 17px 23px;
-    height: 34px;
+   height: auto;
     border: none;
     background: transparent;
     border-bottom: 1px solid rgb(95, 89, 89);
@@ -72,7 +102,7 @@ body {
     padding: px;
     width: 70%;
     margin: 18px 50px;
-    height: 34px;
+   height: auto;
     background-color: white;
     border: none;
     color: black;
@@ -89,8 +119,8 @@ body {
 }
 
 .grade {
-    width: 527px;
-    height: 140px;
+    width: 40%;
+   height: auto;
     /* border: 2px solid red; */
     margin-left: 370px;
     margin-top: 25px;
@@ -104,7 +134,7 @@ body {
 #email {
     width: 70%;
     margin: 10px 40px;
-    height: 34px;
+   height: auto;
     border: none;
     background: transparent;
     border-bottom: 1px solid rgb(95, 89, 89);
@@ -120,23 +150,10 @@ body {
     border-bottom: 1px solid blue;
 }
 
-.header {
-    width: 527px;
-    height: 190px;
-    /* border: 2px solid red; */
-    margin-left: 370px;
-    margin-top: 25px;
-    background-color: white;
-    border-radius: 8px;
-    padding: 23px;
-    font-size: 20px;
-    border-top: 13px solid gray;
-    display: inline-block;
-}
 #submit
 {
     /* border-radius: 2px solid red; */
-    height: 35px;
+   height: auto;
     width: 102px;
     border-radius: 5px;
 border: none;
@@ -154,7 +171,7 @@ font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;
 }
 #reset
 {
-    height: 35px;
+   height: auto;
     width: 102px;
     border-radius: 5px;
 border: none;
@@ -181,7 +198,7 @@ font-family: "Google Sans",Roboto,Arial,sans-serif;
     width: 13%;
     /* background: black; */
     background-color: #24aae2;
-    height: 41px;
+   height: auto;
     font-size: 18px;
     border: none;
     border-radius: 7px;

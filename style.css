@@ -54,6 +54,10 @@
     margin: left 20px !important;
     width: 28% !important;
   }
+  #iframe{
+    width: 100% !important;
+  
+    }
 }
 @media screen and (max-width: 400px) {
   h3 {
@@ -68,6 +72,10 @@
     margin: left 20px !important;
     width: 33% !important;
   }
+  #iframe{
+    width: 100% !important;
+  
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -87,6 +95,10 @@
   .sign-up {
     margin: left 20px !important;
     width: 40% !important;
+  }
+  #iframe{
+  width: 100% !important;
+
   }
 }
 
@@ -240,29 +252,63 @@ label {
   /* border: 1px solid red; */
   background-color: #24aeea;
   height: auto;
+  width: 100%;
   position: sticky;
   /* bottom: 0; */
 }
 
 #iframe {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   float: right;
-  padding: 20px 20px;
-  height: 40vh;
-  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0px;
+  height: 34vh;
+  width: 115%;
 }
 
 .contact-us {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   list-style: none;
   display: inline-block;
   padding: 10px 10px;
+  margin: 14px 10px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.contact-us li
+{
+  /* border: 1px solid red; */
+  width: 100%;
+
+  padding: 6px 40px;
+  /* margin: 10px 20px; */
+}
+.contact-us li a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s;
+}
+.contact-us a:hover 
+{
+  color: black;
+}
+.contact-us li a:hover .contact-us-icon
+{
+  color: white;
+}
+.contact-us-icon 
+{
+  color:black;
+  transition: all 0.4s;
+
 }
 .contact-us button {
-  background-color: #17a2b8;
+  /* background-color: #17a2b8; */
   color: white;
-  font-size: 20px;
-  padding: 20px 10px;
+  /* font-size: 20px; */
+  width: 70%;
+  /* padding: 20px 10px; */
   /* color: #0b4862; */
 }
 .links 
@@ -297,31 +343,29 @@ transition: all 0.4s;
 }
 
 .btn {
-  width: 100%;
+  width: 120%;
   color: white;
 }
 
 .fbise-links {
   display: block;
+  float: left;
   list-style: none;
   padding: 20px 20px;
-  width: 70%;
+  width: 55%;
   /* border: 1px solid red; */
-  margin: 7px  75px;
+  margin: 7px  35px;
 }
 .div-div-fbise
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.div-fbise
-{
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -20px ;
+  /* width: 10%; */
 }
+
 .fbise-links li {
   padding: 5px 6px;
 }
@@ -337,14 +381,6 @@ transition: all 0.4s;
   color: black;
 }
 .fgdc-btn {
-  width: 100%;
+  width: 110%;
   color: white;
-}
-
-
-.f-div
-{
-  /* border: 1px solid red; */
-  /* width: 33%; */
-  /* display: flex; */
 }
