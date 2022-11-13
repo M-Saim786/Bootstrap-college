@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Form</title>
+    <!-- <link rel="stylesheet" href="../Admission.css"> -->
     <link rel="stylesheet" href="../Admission.css">
 </head>
 
 <body>
-<!-- <marquee behavior="" direction="" id="marquee">Addmisions for Class First Year(XI) </marquee> -->
+    <marquee behavior="" direction="" id="marquee">Addmisions for Class First Year(XI)   <a href="../index.html">Go Back</a></marquee>
+    <form action="" id="my-form">
+
     <div class="header">
         <span style="font-family: 'docs-Roboto', Helvetica, Arial, sans-serif; font-size: 32px;">Addmisions Form For XI
             Students </span>
         <br>
-        <div style="display: inline-block; font-size: 16px; line-height: 50px; font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;">
+        <div
+            style="display: inline-block; font-size: 16px; line-height: 50px; font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;">
             <span>
                 For Year 2022-2024
             </span>
@@ -25,40 +27,43 @@
         <hr>
         <div class="">
             <span style="font-size: 13px; font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;"> <b>
-                saimrashid3344@gmail.com
-            </b> </span>
-            <span style=" font-size: 14px;"><a href="https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLSeE3YUkm9WfIxSDcp_B9_nc9uPjl4tKX7rSTB-UIoZHWE8ulA/viewform&service=wise" target="_blank" style="text-decoration: none; color: rgb(41, 41, 246); ">
-                Switch Account
-            </a> </span>
+                    saimrashid3344@gmail.com
+                </b> </span>
+            <span style=" font-size: 14px;"><a
+                    href="https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLSeE3YUkm9WfIxSDcp_B9_nc9uPjl4tKX7rSTB-UIoZHWE8ulA/viewform&service=wise"
+                    target="_blank" style="text-decoration: none; color: rgb(41, 41, 246);">
+                    Switch Account
+                </a> </span>
         </div>
         <div>
             <span style="font-size: 14px;  font-family: 'docs-Roboto', Helvetica, Arial, sans-serif; ">
-                The name and photo associated with your Google account will be recorded when you upload files and submit this form. Your email is not part of your response
+                The name and photo associated with your Google account will be recorded when you upload files and submit
+                this form. Your email is not part of your response
             </span>
         </div>
         <span style="color: red; font-family: 'docs-Roboto', Helvetica, Arial, sans-serif; font-size: 14px;">
-            <sup style="color: red;">*</sup>Required
+            <sup>*</sup>Required
         </span>
     </div>
 
-
+    <!-- main form starts here -->
     <div class="name">
         <form action="">
-            <label for="name" style="margin-top: 10px; display: block; padding: 6px 0px;">Name<sup
-                    style="color: red;">*</sup></label>
-            <input type="text" name="" id="name" placeholder="Your Answer" required>
+            <label for="name" class="labels">Name
+                <sup>*</sup></label>
+            <input type="text" name="" id="name" placeholder="Your Answer" required class="input">
         </form>
     </div>
     <div class="name">
         <form action="">
-            <label for="fname" style="margin-top: 20px;">Father Name<sup style="color: red;">*</sup></label>
-            <input type="text" name="" id="fname" placeholder="Your Answer" required>
+            <label for="fname" class="labels">Father Name<sup>*</sup></label>
+            <input type="text" name="" id="fname" placeholder="Your Answer" required class="input">
         </form>
     </div>
     <div class="name">
         <form action="">
-            <label for="group" style="margin-top: 20px;">Group<sup style="color: red;">*</sup></label>
-            <select name="" id="group" required>
+            <label for="group" class="labels">Group<sup>*</sup></label>
+            <select name="" id="group" required class="select-items">
                 <option value="" disabled selected>Choose Group</option>
                 <option value="">Science General(ICS)</option>
                 <option value="">Pre-Medical</option>
@@ -67,9 +72,9 @@
             </select>
         </form>
     </div>
-    <div class="grade">
+    <div class="name">
         <form action="">
-            <label for="group" style="margin-top: 20px; font-family: Roboto,Arial,sans-serif; font-size: 15px;">Enter
+            <label for="grade" class="labels">Enter
                 Your SSC I or II Grade<sup style="color: red; font-size: 20px;">*</sup><br>
                 <span style="font-size: 14px;">
                     Note: (For Pre Medical, Pre Engineering & Computer Science only A & B Grades are Allowed) for (Arts
@@ -78,7 +83,7 @@
                 </span>
 
             </label>
-            <select name="" id="group" required>
+            <select name="" id="grade" required class="select-items">
                 <option value="" disabled selected>Choose Grade</option>
                 <option value="">A+</option>
                 <option value="">A</option>
@@ -90,8 +95,8 @@
     </div>
     <div class="name">
         <form action="">
-            <label for="group" style="margin-top: 20px;">Category<sup style="color: red;">*</sup></label>
-            <select name="" id="group" required>
+            <label for="category" class="labels">Category<sup>*</sup></label>
+            <select name="" id="category" required class="select-items">
                 <option value="" selected disabled>Choose </option>
                 <option value="">Open Merits(Civilians)</option>
                 <option value="">Defence Paid</option>
@@ -103,76 +108,96 @@
     </div>
     <div class="name">
         <form action="">
-            <span style="font-size: 25px;">
-                Gender<sup style="color: red;">*</sup>
+    
+
+                <span style="font-size: 25px;" class="labels">
+                    Gender
+                    <sup>*</sup>
+                </span>
+
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male" class="gender">Male</label>
+                </div>
+                <br>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female" class="gender">Female</label>
+                </div>
+         
+        </form>
+    </div>
+    <div class="name">
+        <form action="">
+       
+
+                <span style="font-size: 25px
+           ;" class="labels">
+                Board<sup>*</sup>
             </span>
+       
+        <div>
+
+            <input type="radio" name="board" id="bise">
+            <label for="bise" class="gender" >BISE Hyderabad</label>
+        </div>
             <br>
-            <input type="radio" name="gender" id="male" style="  margin-top: 17px;
-            margin-left: 2px;
-            padding: 37px 5px;">
-            <label for="male">Male</label>
-            <br>
-            <input type="radio" name="gender" id="female" style="margin-top: 25px;
-            margin-left: 2px;
-            padding: 37px 5px;">
-            <label for="female">Female</label>
+            <div>
+
+                <input type="radio" name="board" id="fbise" >
+                <label for="fbise" class="gender">FBISE Islamabad</label>
+            </div>
+            </form>
+        </div>
+    <div class="name">
+        <form action="">
+            <label for="WhatsApp"  class="labels">Active WhatsApp Number<sup>*</sup></label>
+            <input type="number" name="" id="WhatsApp" placeholder="Your Answer" required class="input">
         </form>
     </div>
     <div class="name">
         <form action="">
-            <span style="font-size: 25px
-           ;">
-                Board<sup style="color: red;">*</sup>
-            </span> <br>
-            <input type="radio" name="board" id="bise" style="  margin-top: 17px;
-            margin-left: 2px;
-            padding: 37px 5px;">
-            <label for="bise">BISE Hyderabad</label>
-            <br>
-            <input type="radio" name="board" id="fbise" style="margin-top: 25px;
-            margin-left: 2px;
-            padding: 37px 5px;">
-            <label for="fbise">FBISE Islamabad</label>
-        </form>
-    </div>
-    <div class="name">
-        <form action="">
-            <label for="name" style="margin-top: 20px;">Active WhatsApp Number<sup style="color: red;">*</sup></label>
-            <input type="number" name="" id="name" placeholder="Your Answer" required>
-        </form>
-    </div>
-    <div class="name">
-        <form action="">
-            <label for="name" style="margin-top: 20px;">CNIC/B-Form<sup style="color: red;">*</sup></label>
-            <input type="number" name="" id="name" placeholder="Your Answer" required>
+            <label for="CNIC" class="labels">CNIC/B-Form<sup>*</sup></label>
+            <input type="number" name="" id="CNIC" placeholder="Your Answer" required class="input">
         </form>
     </div>
     <div class="name">
         <form action="">
             <p>
-                <label for="name" style="margin-top: 20px;" id="">Email ID<sup style="color: red;">*</sup></label>
-                <input type="text" name="" id="email" placeholder="Your Answer" required>
+                <label for="eMAIL" id="" class="labels">Email ID<sup>*</sup></label>
+                <input type="text" name="" id="eMAIL" placeholder="Your Answer" required class="input">
             </p>
         </form>
     </div>
     <div class="name">
         <form action="">
             <p>
-                <label for="name" style="margin-top: 20px;" id="">Upload Photo<sup style="color: red;">*</sup>
+                <div class="labels">Upload Photo<sup>*</sup>
                     <br>
                     <span style="font-size: 17px; margin: 12px;">
                         Passport Size with Blue or White Background only in College Uniform
-                    </span></label>
-                <input type="file" name="" placeholder="" required style="margin: 20px 100px;">
+                    </span></div>
+                    <label for="file-name" class="labels file-name">
+
+                        <!-- <img src="https://cdn.pixabay.com/photo/2017/02/07/02/16/cloud-2044823_960_720.png" alt="" style="width: 10%; height: 45px;"> -->
+                        Upload Image
+                    
+                    </label>
+                <input type="file"  id="file-name"required style="display: none;">
             </p>
         </form>
     </div>
-<input type="submit" name="" id="submit" value="Submit" >
+    
+    <div class="name footer">
+    <button id="submit" class="btn-form"><a href="">Submit Form</a></button>
 
-<input type="reset" name="" id="reset" value=" Clear Form" >
+    <button  id="reset" type="reset" class="btn-form">Reset Form</button>
+</div>
 
-<!-- <button class="back"><a href="../index.html">&lt;&lt; Goto Home</a></button> -->
 
+    <!-- <button class="back"><a href="../index.html">&lt;&lt; Goto Home</a></button> -->
+</form>
+<script src="./Addmission.js"></script>
 </body>
 
-</html> 
+</html>
