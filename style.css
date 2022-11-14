@@ -1,4 +1,4 @@
-                        /* Media Quries To Make Responsive */
+/* Media Quries To Make Responsive */
 @media screen and (max-width: 1100px) {
   .login {
     margin: left 20px !important;
@@ -52,10 +52,27 @@
     margin: left 20px !important;
     width: 28% !important;
   }
-  #iframe{
+  #iframe {
     width: 100% !important;
-  
-    }
+  }
+  .feed-label {
+    /* border: 1px solid red !important; */
+margin: 0px 24px;
+    text-align: left !important;
+    display: block;
+    width: 50%;
+  }
+  .feed-input {
+    /* border: 1px solid red !important; */
+    width: 90% !important;
+  }
+  .label {
+    display: block;
+    margin-left: 24px !important;
+    text-align: left !important;
+    /* border: 1px solid red; */
+    font-size: 20px !important;
+  }
 }
 @media screen and (max-width: 400px) {
   h3 {
@@ -70,10 +87,10 @@
     margin: left 20px !important;
     width: 33% !important;
   }
-  #iframe{
+  #iframe {
     width: 100% !important;
-  
-    }
+  }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -94,12 +111,11 @@
     margin: left 20px !important;
     width: 40% !important;
   }
-  #iframe{
-  width: 100% !important;
-
+  #iframe {
+    width: 100% !important;
   }
 }
-                    /* NavBar and LOGO  Css */
+/* NavBar and LOGO  Css */
 .dropdown {
   padding: 0px 15px;
 }
@@ -120,7 +136,7 @@ span {
   display: block;
   font-size: 20px;
 }
-                              /* Services Section Css */
+/* Services Section Css */
 #services {
   background-color: rgba(229, 229, 229, 0.457) !important;
   display: block;
@@ -164,7 +180,7 @@ span {
   font-size: 30px;
 }
 
-                    /* Go Back Button CSS */
+/* Go Back Button CSS */
 .top {
   background-color: #eabf24;
   color: white;
@@ -187,7 +203,7 @@ span {
   opacity: 1;
   color: white;
 }
-                /* Login&Sign-Up Form Modal CSS */
+/* Login&Sign-Up Form Modal CSS */
 .login {
   margin-right: 20px;
   width: 11%;
@@ -195,8 +211,7 @@ span {
   background-color: rgb(255, 255, 255);
   color: #0d6efd !important;
 }
-.login:hover
-{
+.login:hover {
   color: white !important;
 }
 .sign-up {
@@ -205,8 +220,7 @@ span {
   width: 16%;
 }
 .sign-up:hover {
-  background-color: rgb(255, 255, 255);
-  color: #0d6efd;
+  color: white;
 }
 label {
   font-size: 1rem !important;
@@ -245,7 +259,7 @@ label {
   font-weight: bold;
   text-decoration: underline;
 }
-                            /*Footer CSS  */
+/*Footer CSS  */
 .footer {
   background-color: #24aeea;
   height: auto;
@@ -270,36 +284,30 @@ label {
   color: white;
   width: 100%;
 }
-.contact-us li
-{
+.contact-us li {
   width: 100%;
   padding: 6px 40px;
 }
-.contact-us li a{
+.contact-us li a {
   text-decoration: none;
   color: white;
   transition: all 0.4s;
 }
-.contact-us a:hover 
-{
+.contact-us a:hover {
   color: black;
 }
-.contact-us li a:hover .contact-us-icon
-{
+.contact-us li a:hover .contact-us-icon {
   color: white;
 }
-.contact-us-icon 
-{
-  color:black;
+.contact-us-icon {
+  color: black;
   transition: all 0.4s;
-
 }
 .contact-us button {
   color: white;
   width: 70%;
 }
-.links 
-{
+.links {
   display: inline-block;
   list-style: none;
   padding: 20px 20px;
@@ -307,21 +315,18 @@ label {
   margin: 7px 50px;
 }
 
-.links li
-{
+.links li {
   padding: 6px 40px;
 }
-.links li a 
-{
+.links li a {
   padding: 0px 20px;
-display: flex;
-color: white;
-text-decoration: none;
-justify-content: center;
-transition: all 0.4s;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  transition: all 0.4s;
 }
-.links li a:hover
-{
+.links li a:hover {
   color: black;
 }
 
@@ -336,14 +341,13 @@ transition: all 0.4s;
   list-style: none;
   padding: 20px 20px;
   width: 55%;
-  margin: 7px  35px;
+  margin: 7px 35px;
 }
-.div-div-fbise
-{
+.div-div-fbise {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -20px ;
+  margin-left: -20px;
 }
 
 .fbise-links li {
@@ -362,4 +366,44 @@ transition: all 0.4s;
 .fgdc-btn {
   width: 110%;
   color: white;
+}
+
+.feed-back {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+#feedback {
+  /* border: 3px solid rebeccapurple; */
+  border-radius: 6px;
+
+  width: 95%;
+  padding: 5px 10px;
+}
+#feed-text {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #0d6efd;
+}
+.feed-input {
+  /* border: 2px solid red; */
+  width: 28%;
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.feed-label {
+  /* border: 1px solid red; */
+  font-size: 1rem !important;
+  color: #0d6efd !important;
+  transition: 0.5s !important;
+}
+.feed-label:hover {
+  color: black !important;
+}
+.label {
+  display: block;
+  margin-left: 40px;
+  text-align: left !important;
+  /* border: 4px solid red; */
+  font-size: 20px !important;
 }

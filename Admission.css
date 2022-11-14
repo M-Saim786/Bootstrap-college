@@ -8,7 +8,6 @@ sup {
   .header {
     font-size: 15px;
     width: 70% !important;
-    border: 4px solid red !important;
   }
   .name {
     width: 70% !important;
@@ -38,39 +37,63 @@ sup {
 @media screen and (max-width: 600px) {
   .header {
     width: 105% !important;
+/* border: 1px solid black!important; */
 
-    font-size: 15px;
   }
   .name{
     width: 105% !important;
+/* border: 1px solid black!important; */
+
+  }
+  #marquee{
+    width: 114% !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .header {
+    width: 110% !important;
+border: 1px solid red !important;
+    font-size: 15px;
+  }
+  .name{
+    width: 110% !important;
+border: 1px solid red !important;
+
+  }
+  #marquee{
+    width: 122% !important;
+  }
+  .btn-form{
+    width: 30% !important;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .header {
     width: 120% !important;
-
     font-size: 15px;
-
-    border: 4px solid red !important;
-
-
   }
   .name{
     width: 120% !important;
   }
-
+  #marquee{
+    width: 132% !important;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .header {
     width: 145% !important;
     font-size: 15px;
-    border: 4px solid red !important;
+    /* border: 4px solid red !important; */
   }
   .name{
     width: 145% !important;
   }
-
+  #marquee{
+    width: 158% !important;
+  }
+  
 }
 @media screen and (max-width: 300px) {
 .header{
@@ -80,7 +103,13 @@ sup {
   .name{
     width: 165% !important;
   }
-  
+  #marquee{
+    width: 182% !important;
+  }
+  .btn-form{
+    width: 35% !important;
+  }
+
 }
 @media screen and (max-width: 250px) {
 .header{
@@ -90,12 +119,17 @@ sup {
   .name{
     width: 180% !important;
   }
-  
+  #marquee{
+    width: 200% !important;
+  }
+  .btn-form{
+    width: 45% !important;
+  }
 }
 
 .header {
   width: 40%;
-  margin: 0px auto;
+  margin: 30px auto;
   height: auto;
   /* border: 2px solid red; */
   background-color: white;
@@ -118,7 +152,6 @@ sup {
   font-size: 20px;
 }
 .labels {
-  /* border: 1px solid red; */
   margin: 20px 10px;
   display: block;
   padding: 5px 20px;
@@ -166,7 +199,6 @@ sup {
   margin: 0px 10px;
 }
 .file-name {
-  /* border: 1px solid red; */
   border-radius: 10px;
   font-size: 1rem;
   padding: 10px 10px;
@@ -179,9 +211,6 @@ sup {
 .file-name:hover {
   background-color: #0b59c7;
 }
-
-
-
               /* Footer Start  Here */
 .footer
 {
@@ -191,10 +220,10 @@ background: transparent !important;
 
   border-radius: 5px;
   width: 25%;
-  height: 35px;
+  height: auto;
+  padding: 6px 10px;
   background-color: rgb(88, 85, 85);
   font-family: "Google Sans", Roboto, Arial, sans-serif;
-  
   text-align: center;
 }       
 
@@ -225,7 +254,6 @@ font-weight: bold;
   float: right;
   margin: -2260px 100px;
   width: 13%;
-  /* background: black; */
   background-color: #24aae2;
   height: auto;
   font-size: 18px;
@@ -234,8 +262,6 @@ font-weight: bold;
 }
 
 .back a {
-  /* float: right; */
-  /* margin: 20px 20px;  */
   text-decoration: none;
   color: white;
 }
@@ -244,7 +270,16 @@ font-weight: bold;
 }
 #marquee {
   font-size: 30px;
-  background-color: cornflowerblue;
+  background-color: #0b59c7;
   color: white;
   line-height: 2;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  width: 95%;
+}
+#marquee a
+{
+  color: red;
+
 }
