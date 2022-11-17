@@ -52,12 +52,12 @@ sup {
 @media screen and (max-width: 500px) {
   .header {
     width: 110% !important;
-border: 1px solid red !important;
+/* border: 1px solid red !important; */
     font-size: 15px;
   }
   .name{
     width: 110% !important;
-border: 1px solid red !important;
+/* border: 1px solid red !important; */
 
   }
   #marquee{
@@ -281,5 +281,31 @@ font-weight: bold;
 #marquee a
 {
   color: red;
+}
+html{
+  scroll-behavior: smooth;
+}
+.top{
+  background-color: #eabf24;
+  color: white;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  font-size: 30px;
+  opacity: 0;
+  transform: .4s;
+  z-index: 1;
+  
 
+}
+.top.active{
+  opacity: 1 ;
+  pointer-events: auto;
 }
