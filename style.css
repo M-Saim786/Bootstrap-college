@@ -154,6 +154,7 @@ span {
   font-size: 75px;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
 }
 .service:hover {
   background-color: #24aeea;
