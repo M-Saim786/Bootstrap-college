@@ -24,3 +24,14 @@ else
     alert('Login Failed')
 }
 }
+
+
+var popUp = document.getElementById('popUp')
+console.log(popUp)
+setTimeout(() => {
+    popUp.setAttribute('style',`display:block;
+     transition:all 0.6s`)
+}, 1000);
+// setTimeout(() => {
+//     popUp.setAttribute('style',`display:none`)
+// }, 3000);

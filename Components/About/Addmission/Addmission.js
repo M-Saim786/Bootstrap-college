@@ -1,9 +1,11 @@
-// function ResetFunc () {
+// function ResetFunc() {
 
-// document.getElementById('my-form').reset();
+// document.getElementById('reset').reset();
 // }
 
-
+function fun(){  
+    document.getElementById("form").reset();  
+  }   
 
 // const toTop = document.querySelector(".top")
 // window.addEventListener('scroll' ,() => {
