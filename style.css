@@ -429,21 +429,23 @@ background-color: #0d6efd;
   text-align: left;
   font-size: 28px;
 }
-#popUp{
-  transition: all 0.6s !important;
+#login_modal{
+  border: 1px solid #0d6efd;
 }
 .modal-content{
   /* border: 1px solid red; */
   display: block ;
   margin: 0px auto ;
+  height: 60vh;
 }
 .modal-dialog{
-  display: flex;
-  height: 75vh;
+  /* border: 1px /solid red; */
+  /* display: flex; */
+  height: 60vh;
   /* width:150% !important ; */
-
 }
 .modal-body{
+  /* border: 1px solid red; */
   background:  url('https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg');
   height: 60%;
 }
@@ -452,4 +454,14 @@ background-color: #0d6efd;
   /* background-color: #1c74f8; */
   border: 1px solid #1c74f8;
   color: white;
+}
+.log_sign{
+  width: 20%;
+}
+.sign-content{
+height: 65vh;
+}
+#modal_footer{
+  background-color: white;
+  margin: -90px 0px;
 }
