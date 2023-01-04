@@ -56,21 +56,18 @@
     width: 100% !important;
   }
   .feed-label {
-    /* border: 1px solid red !important; */
-margin: 0px 24px;
+    margin: 0px 24px;
     text-align: left !important;
     display: block;
     width: 50%;
   }
   .feed-input {
-    /* border: 1px solid red !important; */
     width: 90% !important;
   }
   .label {
     display: block;
     margin-left: 24px !important;
     text-align: left !important;
-    /* border: 1px solid red; */
     font-size: 20px !important;
   }
 }
@@ -90,7 +87,6 @@ margin: 0px 24px;
   #iframe {
     width: 100% !important;
   }
-
 }
 
 @media screen and (max-width: 350px) {
@@ -115,6 +111,7 @@ margin: 0px 24px;
     width: 100% !important;
   }
 }
+
 /* NavBar and LOGO  Css */
 .dropdown {
   padding: 0px 15px;
@@ -236,11 +233,13 @@ label {
 
 .lemail {
   width: 92%;
+  user-select: none;
 }
 .email {
   /* border:  1px solid red; */
   width: 85%;
   outline: none;
+  user-select: none;
   border: none !important;
   border-bottom: 2px solid #6c757d !important;
   background: transparent;
@@ -249,9 +248,6 @@ label {
 }
 .email:hover {
   width: 130%;
-}
-.modal-body {
-  background-color: #2ffaff1a;
 }
 
 #modal-body-text {
@@ -374,9 +370,7 @@ label {
   text-align: center;
 }
 #feedback {
-  /* border: 3px solid rebeccapurple; */
   border-radius: 6px;
-
   width: 95%;
   padding: 5px 10px;
 }
@@ -386,7 +380,6 @@ label {
   color: #0d6efd;
 }
 .feed-input {
-  /* border: 2px solid red; */
   width: 28%;
   padding: 6px 8px;
   border-radius: 5px;
@@ -405,63 +398,54 @@ label {
   display: block;
   margin-left: 40px;
   text-align: left !important;
-  /* border: 4px solid red; */
   font-size: 20px !important;
 }
 
-
-.dropdown-item:hover{
+.dropdown-item:hover {
   /* border: 1px solid green; */
   color: white;
-  transition: 0.4s ;
-background-color: #0d6efd;
-
+  transition: 0.4s;
+  background-color: #0d6efd;
 }
 
 /* .......................Slider CSS */
-.slider-heading{
+.slider-heading {
   text-align: left;
   color: black;
   font-size: 40px;
 }
-.slider-body{
+.slider-body {
   color: black;
   text-align: left;
   font-size: 28px;
 }
-#login_modal{
-  border: 1px solid #0d6efd;
-}
-.modal-content{
+
+.modal-content {
   /* border: 1px solid red; */
-  display: block ;
-  margin: 0px auto ;
+  display: block;
+  margin: 0px auto;
   height: 60vh;
 }
-.modal-dialog{
-  /* border: 1px /solid red; */
-  /* display: flex; */
+.modal-dialog {
   height: 60vh;
-  /* width:150% !important ; */
 }
-.modal-body{
-  /* border: 1px solid red; */
-  background:  url('https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg');
+.modal-body {
+  background: url("https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg");
   height: 60%;
 }
-.marquee{
+.marquee {
   width: 100%;
   /* background-color: #1c74f8; */
-  border: 1px solid #1c74f8;
+  /* border: 1px solid #1c74f8; */
   color: white;
 }
-.log_sign{
+.log_sign {
   width: 20%;
 }
-.sign-content{
-height: 65vh;
+.sign-content {
+  height: 65vh;
 }
-#modal_footer{
+#modal_footer {
   background-color: white;
-  margin: -90px 0px;
+  margin: 80px 0px;
 }

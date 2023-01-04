@@ -15,6 +15,12 @@
 
 <body class="bg-light">
 
+  <!-- GOto TOP Button -->
+  <a href="#" class="top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+
   <!-- Pop-Up Form -->
   <div class="modal" tabindex="-1" id="popUp">
     <div class="modal-dialog">
@@ -33,24 +39,13 @@
             <marquee behavior="" direction="" class="marquee">Results of Class XII AND XI HAS ANNOUNCED</marquee>
           </h3>
         </div>
-
       </div>
     </div>
   </div>
-
-
-
-
-
-
   <!--  Pop-Up Form End's Here -->
-
-
 
   <!-- Navbar Starts Here -->
   <header>
-
-
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand logoa" href="#">
@@ -130,7 +125,7 @@
 
                       </td>
                       <td>
-                        <input type="text" required name="email" id="email" class="email" required>
+                        <input type="text" required name="email" class="Email email" required>
 
                       </td>
 
@@ -141,7 +136,7 @@
 
                       </td>
                       <td>
-                        <input type="password" required name="email" id="password" class="email">
+                        <input type="text" required name="email" id="password" class="email password">
 
                       </td>
                     </tr>
@@ -155,9 +150,9 @@
                   </table>
                 </div>
                 <div class="modal-footer">
-                  <div id="create-account">Don't Have Account <a href="">Sign-Up</a></div> <br>
-                  <button class="btn btn-secondary logClose log_sign" data-bs-dismiss="modal ">Close</button>
-                  <button type="button" class="btn btn-primary log_sign" onclick={login()}>Login</button>
+                  <div id="create-account">Don't Have Account <a href="">Sign-Up</a></div>
+                  <!-- Buttons on Popup -->
+                  <button type="button" id="loginBtn" class="btn btn-primary log_sign">Login</button>
 
                 </div>
               </div>
@@ -166,25 +161,22 @@
 
           <!-- LogIN Modal End's Here -->
 
-
-
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary sign-up " data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop">Sign Up</button>
-
-
+            data-bs-target="#staticBackdrop">
+            Sign-Up
+          </button>
 
           <!-- Modal -->
-
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content sign-content">
+              <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign-Up to Get Full Access on All Features</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body sign-content">
+                <div class="modal-body">
                   <span id="modal-body-text">Fill This Form To Sign-Up</span>
                   <table>
                     <tr>
@@ -209,7 +201,7 @@
 
                       </td>
                       <td>
-                        <input type="text" required name="email" id="Email" class="email">
+                        <input type="text" required name="email" class=" email" id="Email">
                       </td>
                     </tr>
                     <tr>
@@ -218,7 +210,7 @@
 
                       </td>
                       <td>
-                        <input type="password" required name="email" id="Password" class="email">
+                        <input type="password" required name="email" id="Password" class="email password">
                       </td>
                     </tr>
                     <br>
@@ -230,10 +222,13 @@
                     </tr>
                   </table>
                 </div>
+
                 <div class="modal-footer" id="modal_footer">
-                  <div id="create-account">Already Have Account <a href="#">Login</a></div>
-                  <button type="button " class="btn btn-secondary log_sign" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary log_sign">Sign-Up</button>
+                  <div id="create-account">Already Have Account <a href="#">Login</a>
+                  </div>
+
+                  <button type="button" class="btn btn-secondary log_sign" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary log_sign" id="SignUP">Sign-Up</button>
                 </div>
               </div>
             </div>
@@ -241,215 +236,172 @@
         </div>
       </div>
     </nav>
-
-    <!-- Navbar End's -->
-
-    <!-- SLider -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://www.fbise.edu.pk/image/main2.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="slider-heading"> Addmissions..!</h5>
-            <p class="slider-body">Addmissions For Class XI has been Started <br> <a href="">Apply Now</a></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.fbise.edu.pk/image/main5.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="slider-heading">Second slide label</h5>
-            <p class="slider-body"></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.fbise.edu.pk/image/main4.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class="slider-heading">Second slide label</h5>
-            <p class="slider-body">Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
-
-    <!-- 2nd Slider -->
-    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://www.fbise.edu.pk/image/main2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.fbise.edu.pk/image/main5.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://www.fbise.edu.pk/image/main4.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
-    <!-- End of slider -->
-
-    <div id="service"> Student Services</div>
-
-    <!-- Cards -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col col-lg-4  col-sm-6 col-12">
-          <div class="card mt-4 mb-4">
-            <img src="https://www.fbise.edu.pk/image/Syllabus%20&%20Model%20Papers.jpg" class="card-img-top card-img"
-              alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4  col-sm-6 col-12">
-          <div class="card mt-4 mb-4">
-            <img src="https://www.fbise.edu.pk/image/bank_chllan.jpg" class="card-img-top card-img" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4  col-sm-6 col-12">
-          <div class="card mt-4 mb-4">
-            <img src="https://www.fbise.edu.pk/image/result_2022.jpg" class="card-img-top card-img" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4  col-sm-6 col-12">
-          <div class="card mt-4 mb-4">
-            <img src="https://www.fbise.edu.pk/image/roll%20no%20slips.jpg" class="card-img-top card-img" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4  col-sm-6 col-12">
-          <div class="card mt-4 mb-4">
-            <img src="https://www.fbise.edu.pk/image/free_preparation.jpg" class="card-img-top card-img" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4  col-sm-6 col-12">
-          <div class="card mt-4 mb-4">
-            <img src="https://www.fbise.edu.pk/image/online%20services.jpg" class="card-img-top card-img" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="service">Services</div>
-    <br><br>
-    <!-- Services -->
-    <div class="container" id="services">
-      <div class="row">
-        <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-          <div class="card">
-            <div class="service">
-              <i class="fa fa-file-text document"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="#" class="Services">Download PDF's</a></h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-          <div class="card">
-            <div class="service">
-              <i class="fa-solid fa-stamp document"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="#" class="Services">Certificate</a></h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-          <div class="card">
-            <div class="service">
-              <i class="fa-solid fa-graduation-cap  document"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="#" class="Services">ScholarShips</a></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-          <div class="card">
-            <div class="service">
-              <i class="fa-solid fa-landmark-dome document"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="#" class="Services">Board Annoucements</a></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </header>
+
+  <!-- Navbar End's -->
+
+  <!-- SLider -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.fbise.edu.pk/image/main2.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="slider-heading"> Addmissions..!</h5>
+          <p class="slider-body">Addmissions For Class XI has been Started <br> <a href="">Apply Now</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.fbise.edu.pk/image/main5.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="slider-heading">Second slide label</h5>
+          <p class="slider-body"></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.fbise.edu.pk/image/main4.jpg" class="d-block w-100" alt="">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="slider-heading">Second slide label</h5>
+          <p class="slider-body">Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Student Services -->
+  <div id="service"> Student Services</div>
+  <!-- Cards -->
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-4  col-sm-6 col-12">
+        <div class="card mt-4 mb-4">
+          <img src="https://www.fbise.edu.pk/image/Syllabus%20&%20Model%20Papers.jpg" class="card-img-top card-img"
+            alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-4  col-sm-6 col-12">
+        <div class="card mt-4 mb-4">
+          <img src="https://www.fbise.edu.pk/image/bank_chllan.jpg" class="card-img-top card-img" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-4  col-sm-6 col-12">
+        <div class="card mt-4 mb-4">
+          <img src="https://www.fbise.edu.pk/image/result_2022.jpg" class="card-img-top card-img" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-4  col-sm-6 col-12">
+        <div class="card mt-4 mb-4">
+          <img src="https://www.fbise.edu.pk/image/roll%20no%20slips.jpg" class="card-img-top card-img" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-4  col-sm-6 col-12">
+        <div class="card mt-4 mb-4">
+          <img src="https://www.fbise.edu.pk/image/free_preparation.jpg" class="card-img-top card-img" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-4  col-sm-6 col-12">
+        <div class="card mt-4 mb-4">
+          <img src="https://www.fbise.edu.pk/image/online%20services.jpg" class="card-img-top card-img" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service -->
+  <div id="service">Services</div>
+  <br><br>
+  <!-- Services -->
+  <div class="container" id="services">
+    <div class="row">
+      <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="service">
+            <i class="fa fa-file-text document"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><a href="#" class="Services">Download PDF's</a></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="service">
+            <i class="fa-solid fa-stamp document"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><a href="#" class="Services">Certificate</a></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="service">
+            <i class="fa-solid fa-graduation-cap  document"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><a href="#" class="Services">ScholarShips</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
+        <div class="card">
+          <div class="service">
+            <i class="fa-solid fa-landmark-dome document"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><a href="#" class="Services">Board Annoucements</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <br>
   <hr>
@@ -473,10 +425,6 @@
   <br>
   <hr>
   <br>
-  <!-- GOto TOP Button -->
-  <a href="#" class="top">
-    <i class="fas fa-chevron-up"></i>
-  </a>
 
   <!-- Footer Start's Here -->
   <footer class="footer">
@@ -546,6 +494,26 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js">
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaT0PAVsosPLfRtX7T1lGA5cMzHrTSTWA",
+      authDomain: "college-web-46b11.firebaseapp.com",
+      databaseURL: "https://college-web-46b11-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "college-web-46b11",
+      storageBucket: "college-web-46b11.appspot.com",
+      messagingSenderId: "103429742844",
+      appId: "1:103429742844:web:d70464d3f31b8f71d4b779"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./app.js"></script>
