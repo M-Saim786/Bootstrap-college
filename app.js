@@ -20,41 +20,19 @@ setTimeout(() => {
 }, 10000);
 
 // First Popup ka close
+
 var closebtn = document.getElementById("close");
 closebtn.addEventListener("click", () => {
   popUp.setAttribute("style", `display:none`);
 });
 
+
+
+
 var Email = document.getElementById("Email");
 var password = document.getElementById("Password");
 var firstName = document.getElementById("fname");
 var lastName = document.getElementById("lname");
-
-// Firebase Login Connect Database
-var loginBtn = document.getElementById("loginBtn");
-loginBtn.addEventListener("click", () => {
-  if (Email[0].value == "" || password[0].value == "") {
-    alert("Please Enter User Name or Password ");
-  } else {
-    // firebase
-    //   .auth()
-    //   .signInWithEmailAndPassword(Email[0].value, password[0].value)
-    //   //
-    //   .then(function (user) {
-    //     console.log(user);
-    // var userobj = {
-    //   Email : Email[0].value,
-    //   password: password[0].value,
-    //   FirstName : firstName.value,
-    //   lastName : lastName.value
-    // };
-    // firebase.database().ref("user/").push(userobj);
-    // })
-    // .catch(function (e) {
-    //   alert(e.message);
-    // });
-  }
-});
 
 // Firebase SignUP Connect Database
 var SignUP = document.getElementById("SignUP");
@@ -69,11 +47,40 @@ SignUP.addEventListener("click", () => {
         lastName: lastName.value,
         Email: Email.value,
         password: password.value,
+        UserId: user.user.uid,
       };
-      firebase.database().ref("user/").push(UserInfoObj);
+      alert('SignUP user created successfully')
+      location.reload(true);
+      firebase.database().ref("user/").child(user.user.uid).set(UserInfoObj);
     })
     .catch((e) => {
       console.log(e);
+      alert(e.message);
+    });
+
+});
+
+// Firebase Login Connect Database
+var loginEmail = document.getElementById('loginEmail')
+var loginPassword = document.getElementById('loginPassword')
+var loginBtn = document.getElementById("loginBtn");
+loginBtn.addEventListener("click", () => {
+  console.log("click to login");
+
+  // alert("Please Enter User Name or Password ");
+
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(loginEmail.value, loginPassword.value)
+
+    .then(function (user) {
+      console.log(user);
+      localStorage.setItem("uid", user.user.uid);
+      window.location.href = "index.html";
+    
+      alert("Login Successful");  
+    })
+    .catch(function (e) {
       alert(e.message);
     });
 });

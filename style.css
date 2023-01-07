@@ -145,7 +145,7 @@ span {
   display: flex;
   border-radius: 50%;
   margin: 20px auto;
-  height: 22vh;
+  height: 28vh;
   width: 57%;
   color: #24aeea;
   font-size: 75px;
@@ -164,7 +164,7 @@ span {
   text-decoration: none;
 }
 .card {
-  border: none;
+  /* border: none; */
   text-align: center;
   background: transparent;
 }
