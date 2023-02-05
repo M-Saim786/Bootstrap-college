@@ -22,7 +22,7 @@
 
 
   <!-- Pop-Up Form -->
-  <div class="modal" tabindex="-1" id="popUp">
+  <div class="modal "  data-bs-backdrop="static" tabindex="-1" id="popUp" aria-hidden="true" >
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -109,7 +109,7 @@
             type="button">Login</button>
 
           <!-- Modal -->
-          <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
             <div class="modal-dialog">
               <div class="modal-content" id="login_modal">
                 <div class="modal-header">
@@ -168,7 +168,7 @@
           </button>
 
           <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"  tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -293,9 +293,8 @@
           <img src="https://www.fbise.edu.pk/image/Syllabus%20&%20Model%20Papers.jpg" class="card-img-top card-img"
             alt="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Syllabus & Modal Papers</h5>
+            <p class="card-text">Syllabus for all the grades are available online. The information regarding relevant model papers, old question papersis accessible to every student.</p>
           </div>
         </div>
       </div>
@@ -303,9 +302,8 @@
         <div class="card mt-4 mb-4">
           <img src="https://www.fbise.edu.pk/image/bank_chllan.jpg" class="card-img-top card-img" alt="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Fee Info</h5>
+            <p class="card-text">Fee structure and all the fee related queries are all solved here. You can now get your bank challans by staying in your home.</p>
           </div>
         </div>
       </div>
@@ -313,9 +311,8 @@
         <div class="card mt-4 mb-4">
           <img src="https://www.fbise.edu.pk/image/result_2022.jpg" class="card-img-top card-img" alt="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Addmision Forms</h5>
+            <p class="card-text">Online admission forms are accessible to every student. Students can now get themselves enrolled without getting into the hassle of coming to Federal Board.</p>
           </div>
         </div>
       </div>
@@ -323,19 +320,17 @@
         <div class="card mt-4 mb-4">
           <img src="https://www.fbise.edu.pk/image/roll%20no%20slips.jpg" class="card-img-top card-img" alt="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Roll Number Slips</h5>
+            <p class="card-text">FGDCH has made it easy for students to get their roll number slips by just clicking. All the information regarding issuance of roll number slips will be provided here.</p>
           </div>
         </div>
       </div>
       <div class="col col-lg-4  col-sm-6 col-12">
         <div class="card mt-4 mb-4">
-          <img src="https://www.fbise.edu.pk/image/free_preparation.jpg" class="card-img-top card-img" alt="">
+          <img src="https://www.fbise.edu.pk/image/result_2022.jpg" class="card-img-top card-img" alt="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Results</h5>
+            <p class="card-text">Students will not have to queue up to see their results. Students can now watch their results online by roll number , name and institution also see their results online.</p>
           </div>
         </div>
       </div>
@@ -343,9 +338,8 @@
         <div class="card mt-4 mb-4">
           <img src="https://www.fbise.edu.pk/image/online%20services.jpg" class="card-img-top card-img" alt="">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Online Services</h5>
+            <p class="card-text">FGDCH offers a wide range of online services, like Online Appointment, Migration, Duplicate Marksheet, Document verification, Result Cancellation etc.</p>
           </div>
         </div>
       </div>
@@ -356,10 +350,10 @@
   <div id="service">Services</div>
   <br><br>
   <!-- Services -->
-  <div class="container" id="services">
+  <div class="container text-center" id="services">
     <div class="row">
       <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-        <div class="card">
+        <div class="cards">
           <div class="service">
             <i class="fa fa-file-text document"></i>
           </div>
@@ -370,7 +364,7 @@
       </div>
 
       <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-        <div class="card">
+        <div class="cards">
           <div class="service">
             <i class="fa-solid fa-stamp document"></i>
           </div>
@@ -381,7 +375,7 @@
       </div>
 
       <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-        <div class="card">
+        <div class="cards">
           <div class="service">
             <i class="fa-solid fa-graduation-cap  document"></i>
           </div>
@@ -391,7 +385,7 @@
         </div>
       </div>
       <div class="col col-lg-3 col-md-3 col-sm-6 col-12">
-        <div class="card">
+        <div class="cards">
           <div class="service">
             <i class="fa-solid fa-landmark-dome document"></i>
           </div>
@@ -413,11 +407,12 @@
       <form action="">
         <label for="feed-name" class="feed-label">Name</label>
         <input type="text" name="" id="feed-name" class="feed-input">
-        <label for="E-MAIL" class="feed-label">E-Mail</label>
-        <input type="text" name="" id="E-MAIL" class="feed-input">
+        <label for="E-MAIL" class="feed-label ">E-Mail</label>
+        <input type="text" name="" id="E-MAIL" class="feed-input ">
         <br>
         <label for="feedback" class="feed-label label">Message </label>
-        <textarea name="" id="feedback" cols="140" rows="8" placeholder="Enter Text Here"></textarea>
+        <textarea name="" id="feedback" cols="140" rows="8" placeholder="Enter Text Here" class="form-control"></textarea>
+        <button class="btn btn-primary my-3" style="width:11%">Send FeedBack</button>
       </form>
     </div>
   </div>

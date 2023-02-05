@@ -137,21 +137,23 @@ span {
 #services {
   background-color: rgba(229, 229, 229, 0.457) !important;
   display: block;
-  width: 100% !important;
+  width: 100%;
   padding: 30px 20px;
+  border-radius: 10px;
 }
 .service {
   border: 1px solid #24aeea;
   display: flex;
   border-radius: 50%;
   margin: 20px auto;
-  height: 28vh;
-  width: 57%;
+  height: 40vh;
   color: #24aeea;
   font-size: 75px;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  font-size: 7rem;
+  transition: all 0.5s;
+  /* transition: 0.5s; */
 }
 .service:hover {
   background-color: #24aeea;
@@ -163,10 +165,18 @@ span {
 .Services {
   text-decoration: none;
 }
-.card {
+.card{
   /* border: none; */
   text-align: center;
   background: transparent;
+  height: 65vh;
+}
+.card-text{
+  line-height: 1.9;
+    text-align: justify;
+}
+.cards {
+  /* border: 1px solid #24aeea; */
 }
 #service {
   border-bottom: 1px solid rebeccapurple;
