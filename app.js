@@ -40,18 +40,21 @@ SignUP.addEventListener("click", () => {
   firebase
     .auth()
     .createUserWithEmailAndPassword(Email.value, password.value)
-    .then((user) => {
-      console.log(user);
-      var UserInfoObj = {
-        FirstName: firstName.value,
-        lastName: lastName.value,
-        Email: Email.value,
-        password: password.value,
-        UserId: user.user.uid,
-      };
+    .then(async(user) => {
+      console.log(user.user.uid);
+    
+      await firebase.database().ref("user/").child(user.user.uid).set({
+        
+            FirstName: firstName.value,
+            lastName: lastName.value,
+            Email: Email.value,
+            password: password.value,
+            UserId: user.user.uid,
+
+      });
       alert('SignUP user created successfully')
       location.reload(true);
-      firebase.database().ref("user/").child(user.user.uid).set(UserInfoObj);
+
     })
     .catch((e) => {
       console.log(e);

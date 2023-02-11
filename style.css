@@ -87,6 +87,15 @@
   #iframe {
     width: 100% !important;
   }
+  .log_sign {
+    width: 32% !important;
+}
+#send_feed_btn{
+  width: 40% !important;
+}
+.slider_btn{
+  padding: 5px 5px !important;
+}
 }
 
 @media screen and (max-width: 350px) {
@@ -175,9 +184,7 @@ span {
   line-height: 1.9;
     text-align: justify;
 }
-.cards {
-  /* border: 1px solid #24aeea; */
-}
+
 #service {
   border-bottom: 1px solid rebeccapurple;
   width: 80%;
@@ -210,6 +217,10 @@ span {
 .top.active {
   opacity: 1;
   color: white;
+}
+/* First MOdal CSS*/
+.popUp{
+  height: 55vh;
 }
 /* Login&Sign-Up Form Modal CSS */
 .login {
@@ -374,9 +385,8 @@ label {
   width: 110%;
   color: white;
 }
-
+/*                    Feed Back Form */
 .feed-back {
-  /* border: 1px solid red; */
   text-align: center;
 }
 #feedback {
@@ -410,9 +420,19 @@ label {
   text-align: left !important;
   font-size: 20px !important;
 }
+#send_feed_btn{
+  color: #3498db;
+  border: 2px solid #3498db ;
+  background-color: white;
+  background: none;
+  font-size: 18px;
+}
+#send_feed_btn:hover{
+  background-color: #24aeea;
+  color: white;
+}
 
 .dropdown-item:hover {
-  /* border: 1px solid green; */
   color: white;
   transition: 0.4s;
   background-color: #0d6efd;
@@ -434,14 +454,15 @@ label {
   /* border: 1px solid red; */
   display: block;
   margin: 0px auto;
-  height: 60vh;
+  height: 52vh;
 }
 .modal-dialog {
   height: 60vh;
 }
 .modal-body {
   background: url("https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg");
-  height: 60%;
+  /* height: 60%; */
+  background-color: white;
 }
 .marquee {
   width: 100%;
@@ -455,7 +476,18 @@ label {
 .sign-content {
   height: 65vh;
 }
-#modal_footer {
+.modal_footer {
   background-color: white;
-  margin: 80px 0px;
+  /* margin: 80px 0px; */
+}
+/*             Slider Button */
+.slider_btn{
+  /* border: 1px solid red; */
+  background-color: #80808087;
+  padding: 15px 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
